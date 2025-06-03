@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consumo Consciente</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 Consumo Consciente</h1>
+    <p>Dicas para economizar, evitar desperdícios e cuidar do planeta</p>
+    <button id="theme-toggle">🌙 Modo Escuro</button>
+  </header>
+
+  <nav>
+    <button onclick="scrollToSection('planejamento')">Planejamento</button>
+    <button onclick="scrollToSection('armazenamento')">Armazenamento</button>
+    <button onclick="scrollToSection('reaproveitamento')">Reaproveitamento</button>
+    <button onclick="scrollToSection('validade')">Validade</button>
+    <button onclick="scrollToSection('impacto')">Impacto Ambiental</button>
+    <button onclick="scrollToSection('quiz')">Quiz</button>
+  </nav>
+
+  <main>
+    <section id="dica" class="card destaque">
+      <h2>💡 Dica do Dia</h2>
+      <p id="dica-texto">Carregando dica...</p>
+    </section>
+
+    <section id="planejamento" class="card">
+      <h2>🛒 Planejamento de Compras</h2>
+      <p>Crie listas antes de ir ao mercado. Compre somente o necessário e evite promoções enganosas.</p>
+    </section>
+
+    <section id="armazenamento" class="card">
+      <h2>🥦 Armazenamento Correto</h2>
+      <p>Guarde alimentos em locais adequados. Use potes com tampa e etiquete datas.</p>
+    </section>
+
+    <section id="reaproveitamento" class="card">
+      <h2>🍲 Reaproveitamento de Alimentos</h2>
+      <p>Transforme sobras em novas receitas. Cascas de legumes viram caldos!</p>
+    </section>
+
+    <section id="validade" class="card">
+      <h2>📅 Validade x Vencimento</h2>
+      <p>Use o bom senso: aparência, cheiro e textura também dizem muito.</p>
+    </section>
+
+    <section id="impacto" class="card">
+      <h2>🌍 Impacto Ambiental</h2>
+      <p>O desperdício contribui com gases do efeito estufa. Reduzir é proteger o planeta.</p>
+    </section>
+
+    <section id="quiz" class="card">
+      <h2>🧠 Quiz Rápido</h2>
+      <p>Qual destas atitudes ajuda a evitar o desperdício?</p>
+      <ul>
+        <li><button onclick="verificarResposta(0)">Comprar tudo em promoção</button></li>
+        <li><button onclick="verificarResposta(1)">Planejar as refeições da semana</button></li>
+        <li><button onclick="verificarResposta(2)">Jogar sobras fora</button></li>
+      </ul>
+      <p id="resultado-quiz"></p>
+    </section>
+
+    <section class="card">
+      <h2>📱 Acesse o app via QR Code</h2>
+      <p>Escaneie o código abaixo para abrir o aplicativo no seu celular:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://seu-link-aqui.com&size=150x150" alt="QR Code do aplicativo" />
+      <p style="font-size: 0.9rem;">Link: https://seu-link-aqui.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto de Extensão – Estácio </p>
+    <p>Desenvolvido por Deise Oliveira</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

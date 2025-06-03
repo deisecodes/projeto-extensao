@@ -1,0 +1,129 @@
+:root {
+  --cor-fundo: #f2f7f5;
+  --cor-texto: #333;
+  --cor-card: #fff;
+  --cor-nav: #388e3c;
+  --cor-principal: #4CAF50;
+}
+
+body.dark-mode {
+  --cor-fundo: #1e1e1e;
+  --cor-texto: #f0f0f0;
+  --cor-card: #2a2a2a;
+  --cor-nav: #2e7d32;
+  --cor-principal: #66bb6a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: var(--cor-principal);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--cor-nav);
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+nav button {
+  background-color: #fff;
+  color: var(--cor-nav);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #c8e6c9;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background-color: var(--cor-card);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destaque {
+  border-left: 8px solid var(--cor-principal);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li button {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.3rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0f2f1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul li button:hover {
+  background-color: #b2dfdb;
+}
+
+footer {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  ul li button {
+    font-size: 1rem;
+  }
+}
