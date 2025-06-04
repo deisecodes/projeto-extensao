@@ -115,7 +115,7 @@ footer {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: ;
 }
 
 @media (max-width: 600px) {
@@ -132,4 +132,11 @@ img {
   ul li button {
     font-size: 1rem;
   }
+  img {
+    max-width: 600px
+  .qr-img {
+    width: 80%;
+  }
+  
 }
+
