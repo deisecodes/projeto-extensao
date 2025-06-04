@@ -113,10 +113,12 @@ footer {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: ;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
+
 
 @media (max-width: 600px) {
   nav {
